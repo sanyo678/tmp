@@ -1,0 +1,133 @@
+\hypertarget{class_leaf}{\section{Leaf Class Reference}
+\label{class_leaf}\index{Leaf@{Leaf}}
+}
+
+
+{\ttfamily \#include $<$Leaf.\-hpp$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_leaf_aab9ce9a7da255ca00edf0fb7ac278aa5}{typedef std\-::shared\-\_\-ptr$<$ \hyperlink{class_leaf}{Leaf} $>$ {\bfseries ptr}}\label{class_leaf_aab9ce9a7da255ca00edf0fb7ac278aa5}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_leaf_a38c8e714bc2fc5b63b8ec80bce9cae32}{Leaf} (int)
+\item 
+\hypertarget{class_leaf_a522dbb4d9aa1b99f0a7fa1754d78b345}{int \hyperlink{class_leaf_a522dbb4d9aa1b99f0a7fa1754d78b345}{get\-Value} ()}\label{class_leaf_a522dbb4d9aa1b99f0a7fa1754d78b345}
+
+\begin{DoxyCompactList}\small\item\em Return leaf's value. \end{DoxyCompactList}\item 
+void \hyperlink{class_leaf_a9e8de3c69c119b4434d794e2514b84d3}{set\-Value} (int)
+\item 
+int \hyperlink{class_leaf_aefc905332d64dab4c353390f883843e2}{get\-Leaf} (int pos, \hyperlink{class_leaf}{Leaf} $\ast$\&result, bool done=false)
+\item 
+int \hyperlink{class_leaf_a150228fb4d7f2056e80cbf22f26201f5}{get\-Leaf\-Reverse} (int pos, \hyperlink{class_leaf}{Leaf} $\ast$\&result, bool done=false)
+\item 
+int \hyperlink{class_leaf_a7e83325c778aad278e16b7f3d51a9d92}{get\-Leaf\-Symmetric} (int pos, \hyperlink{class_leaf}{Leaf} $\ast$\&result, bool done=false)
+\item 
+int \hyperlink{class_leaf_a0d7a079fcafa6f45fa269f73c8b3162e}{add} (int, int)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_leaf}{Leaf} represents element of \char`\"{}\-Tree\char`\"{} 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_leaf_a38c8e714bc2fc5b63b8ec80bce9cae32}{\index{Leaf@{Leaf}!Leaf@{Leaf}}
+\index{Leaf@{Leaf}!Leaf@{Leaf}}
+\subsubsection[{Leaf}]{\setlength{\rightskip}{0pt plus 5cm}Leaf\-::\-Leaf (
+\begin{DoxyParamCaption}
+\item[{int}]{a}
+\end{DoxyParamCaption}
+)}}\label{class_leaf_a38c8e714bc2fc5b63b8ec80bce9cae32}
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em Value} & of leaf \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_leaf_a0d7a079fcafa6f45fa269f73c8b3162e}{\index{Leaf@{Leaf}!add@{add}}
+\index{add@{add}!Leaf@{Leaf}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}int Leaf\-::add (
+\begin{DoxyParamCaption}
+\item[{int}]{val, }
+\item[{int}]{pos}
+\end{DoxyParamCaption}
+)}}\label{class_leaf_a0d7a079fcafa6f45fa269f73c8b3162e}
+Adding new leaf as right child to leaf with position \char`\"{}position\char`\"{} 
+\begin{DoxyParams}{Parameters}
+{\em Value} & \\
+\hline
+{\em Position} & of parent leaf \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_leaf_aefc905332d64dab4c353390f883843e2}{\index{Leaf@{Leaf}!get\-Leaf@{get\-Leaf}}
+\index{get\-Leaf@{get\-Leaf}!Leaf@{Leaf}}
+\subsubsection[{get\-Leaf}]{\setlength{\rightskip}{0pt plus 5cm}int Leaf\-::get\-Leaf (
+\begin{DoxyParamCaption}
+\item[{int}]{pos, }
+\item[{{\bf Leaf} $\ast$\&}]{result, }
+\item[{bool}]{done = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{class_leaf_aefc905332d64dab4c353390f883843e2}
+Return leaf on \char`\"{}position\char`\"{} position (straight pass) 
+\begin{DoxyParams}{Parameters}
+{\em Position} & \\
+\hline
+{\em Result} & buffer \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_leaf_a150228fb4d7f2056e80cbf22f26201f5}{\index{Leaf@{Leaf}!get\-Leaf\-Reverse@{get\-Leaf\-Reverse}}
+\index{get\-Leaf\-Reverse@{get\-Leaf\-Reverse}!Leaf@{Leaf}}
+\subsubsection[{get\-Leaf\-Reverse}]{\setlength{\rightskip}{0pt plus 5cm}int Leaf\-::get\-Leaf\-Reverse (
+\begin{DoxyParamCaption}
+\item[{int}]{pos, }
+\item[{{\bf Leaf} $\ast$\&}]{result, }
+\item[{bool}]{done = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{class_leaf_a150228fb4d7f2056e80cbf22f26201f5}
+Return leaf on \char`\"{}position\char`\"{} position (reverse pass) 
+\begin{DoxyParams}{Parameters}
+{\em Position} & \\
+\hline
+{\em Result} & buffer \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_leaf_a7e83325c778aad278e16b7f3d51a9d92}{\index{Leaf@{Leaf}!get\-Leaf\-Symmetric@{get\-Leaf\-Symmetric}}
+\index{get\-Leaf\-Symmetric@{get\-Leaf\-Symmetric}!Leaf@{Leaf}}
+\subsubsection[{get\-Leaf\-Symmetric}]{\setlength{\rightskip}{0pt plus 5cm}int Leaf\-::get\-Leaf\-Symmetric (
+\begin{DoxyParamCaption}
+\item[{int}]{pos, }
+\item[{{\bf Leaf} $\ast$\&}]{result, }
+\item[{bool}]{done = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}}\label{class_leaf_a7e83325c778aad278e16b7f3d51a9d92}
+Return leaf on \char`\"{}position\char`\"{} position (symmetric pass) 
+\begin{DoxyParams}{Parameters}
+{\em Position} & \\
+\hline
+{\em Result} & buffer \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_leaf_a9e8de3c69c119b4434d794e2514b84d3}{\index{Leaf@{Leaf}!set\-Value@{set\-Value}}
+\index{set\-Value@{set\-Value}!Leaf@{Leaf}}
+\subsubsection[{set\-Value}]{\setlength{\rightskip}{0pt plus 5cm}void Leaf\-::set\-Value (
+\begin{DoxyParamCaption}
+\item[{int}]{a}
+\end{DoxyParamCaption}
+)}}\label{class_leaf_a9e8de3c69c119b4434d794e2514b84d3}
+Set leaf's value 
+\begin{DoxyParams}{Parameters}
+{\em Position} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Acer/\-Desktop/Универ/2 семестр/lab\-T\-M\-P/lab4/lab4/Leaf.\-hpp\item 
+C\-:/\-Users/\-Acer/\-Desktop/Универ/2 семестр/lab\-T\-M\-P/lab4/lab4/Leaf.\-cpp\end{DoxyCompactItemize}
